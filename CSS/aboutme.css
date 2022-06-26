@@ -1,0 +1,149 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: NEXTART_Regular;
+    src: url(/CSS/font/NEXTART_Regular.otf);
+}
+
+.html {
+
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 20;
+    position: relative;
+    z-index: 1;
+
+}
+
+.navitem {
+    text-align: center;
+    padding: 20px 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-bottom: 10;
+    border-style: none;
+    font-family: NEXTART_Regular;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+    opacity: 0.8;
+    transition: 0.6s;
+    background-color: black;
+    color: white;
+}
+
+.navitem:hover {
+    background-color: white;
+    opacity: 1;
+    color: black;
+}
+
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+
+
+.center-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding:16px 14px;
+    border-radius: 20px;
+    font-family: NEXTART_Regular;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+.button{
+ font-family: NEXTART_Regular;
+    padding: 20px 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-bottom: 10;
+    border-style: none;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+    color: white;;
+    background-color:black;
+    opacity: 0.8;
+    transition: 0.6s;
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+    
+}
+
+.content{
+    direction:rtl
+}
+
+.image{
+    height:360px;   
+    background-color: white;
+    border: 1px solid;
+    padding:10px 10px;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+    vertical-align: middle
+
+        
+}
+
+.paragraph {
+    z-index: 0;
+    padding: 1px 20px;
+    text-align: left;
+    font-family: NEXTART_REGULAR;
+    font-size: 12;
+    color: white;
+    background-color:black;
+    line-height: 1.6;
+    width:1070;
+    float:right;
+    clear:right;
+    margin:0.5em 0 1em 1em;
+    border: 1px solid blue;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+
+
+
+footer{
+     display: flex;
+    justify-content: space-evenly;
+    margin: 20;
+    position: relative;
+    z-index: 1;
+    
+}

@@ -13,24 +13,36 @@
     src: url(/CSS/font/NEXTART_Regular.otf);
 }
 
-.html {
 
-    height: 100%;
-    background-color: black;
+
+body, html {
+  
+  margin: 0;
+  padding: 0;
+overflow-x: hidden;
+    background:white; 
 }
 
-body {
-    overflow-x: hidden;
-
+header{
+    padding-top: 3;
+    margin-top:auto;
+    margin-right:auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-size:cover;
+    background-position: top;
+     background: linear-gradient(-45deg, #35577D, #141E30); 
+    
 }
 
 .nav {
     display: flex;
     justify-content: space-evenly;
-
-    margin: 20;
+    margin: 10px;
     position: relative;
     z-index: 1;
+
 
 }
 
@@ -46,42 +58,17 @@ body {
     animation: fadeIn 1s ease-in 0s 1 normal forwards;
     opacity: 0.8;
     transition: 0.6s;
-    background-color: black;
+    background-color: cornflowerblue;
     color: white;
 }
 
 .navitem:hover {
     background-color: white;
     opacity: 1;
-    color: black;
+    color: cornflowerblue;
 }
 
 
-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    animation: fadeIn 1s ease-in 0s 1 normal forwards;
-}
-
-
-
-.center-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding:16px 14px;
-    border-radius: 20px;
-    font-family: NEXTART_Regular;
-    color: white;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-      animation: fadeIn 1s ease-in 0s 1 normal forwards;
-}
 
 .button{
  font-family: NEXTART_Regular;
@@ -92,23 +79,35 @@ video {
     margin-bottom: 10;
     border-style: none;
     animation: fadeIn 1s ease-in 0s 1 normal forwards;
-    color: white;;
-    background-color:black;
+    color: white;
+    background-color:cornflowerblue;
     opacity: 0.8;
     transition: 0.6s;
 }
 
 .button:hover {
-    color: black;
+    color: cornflowerblue;
     background-color: white;
     
 }
 
 .content{
-    direction:rtl
+    display: -moz-box; /* Firefox */
+    display: -webkit-box; /* Chrome */
+    display: flexbox;
+    flex-direction: column;
+    flex-align:start;
+    width: 85%;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: auto;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
 }
 
 .image{
+    float:left;
     height:360px;   
     background-color: white;
     border: 1px solid;
@@ -119,31 +118,51 @@ video {
         
 }
 
-.paragraph {
+article{
     z-index: 0;
     padding: 1px 20px;
     text-align: left;
-    font-family: NEXTART_REGULAR;
-    font-size: 12;
-    color: white;
-    background-color:black;
+    font-family: NEXTART_SemiBold;
+    font-size: 14;
+    color: black;
     line-height: 1.6;
-    width:1070;
+    width:60%;
     float:right;
     clear:right;
     margin:0.5em 0 1em 1em;
-    border: 1px solid blue;
+    border: 2px solid black;
     animation: fadeIn 1s ease-in 0s 1 normal forwards;
 }
 
-
+.para-header{
+    text-align: center;
+    font-size:17;
+    
+    
+}
 
 
 footer{
-     display: flex;
-    justify-content: space-evenly;
-    margin: 20;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    padding:  5px;
+    bottom: 0;
+    width: 100%;
+            /* Height of the footer*/ 
+    height: 100px;
+    vertical-align: baseline;
+    scroll-behavior: auto;
+    margin-bottom: -11px;
+    background: linear-gradient(-45deg, #35577D, #141E30);       
     
 }
+
+
+.foot-nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10;
+    position: relative;
+    z-index: 1;  
+}
+
+

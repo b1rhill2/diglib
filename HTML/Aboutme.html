@@ -8,7 +8,7 @@
 <html class="html">
 
     <body>
-        
+       <header>
         <div class="nav">
         
         <a href="index.html"> 
@@ -24,27 +24,32 @@
         </a>
   
         </div>
-        <!--CSS needed to put title in center-->
-        <div class="underheader">
-            <h1>About Me</h1>
-        </div>
+    </header>        
+        <br>
 
         <div class="content">
-        <img class="image" src="https://pbs.twimg.com/media/EXzHukzWsAA29F2?format=jpg&name=small" alt="Beautiful picture of me (temporary)">
+        <img class="image" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/123080798_1804725089679011_4496791481737942649_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=r92ys4sFswUAX_9DRy-&_nc_ht=scontent-ort2-1.xx&oh=00_AT_-ruJOQSUnNEOiJQZWJFYvAT8qiwU3YWcJiWVj-qQqHA&oe=62E63599" alt="Beautiful picture of me (temporary)">
         <!--use css to align text next to image-->
         
-        <article id="vector-body" class="paragraph">
+        <article class="paragraph">
             
             <div>
-                <p>this a is test message so if <!--Paragraph Who I am--></p>
+                 <!--Paragraph Who I am-->
+                <p class="para-header">Who I Am</p>
+                <p>My name is Briana Hill, I am currently a fourth year student at Michigan State Univeristy persuring Computer Science Engeering. I had a passionate person who's hobbies include playing the guitar, skating, drawing, and an avid gamer. My inquisitiveness desire to learn allows me to pursue all different types of hobbies to achieve my goals and be a well rounded individual.</p>
             </div>
             
             <div>
-                <p><!--What I am Learning--></p>
+                <!--What I am Learning-->
+                <p class="para-header">What I Am Learning</p>
+                <p>I am Currently Learning HTML 5, CSS, Java script, and later this summer I will be tackling C++. I am currently enrolled in Codacedmy and this is my first project since beinging enrolled in the college of computer science engineering at Michigan State University.</p>
             </div>
             
             <div>
-                <p><!--What classes I have--></p>
+                <!--What classes I have-->
+                <p class="para-header">What Classes I Have</p>
+                <!--Edit
+                <p>Currently I am not enrolled in any class (6/28)</p>-->
             </div>
             
         </article>
@@ -57,11 +62,16 @@
     <div>
         <!--make fancy with css-->
     <footer>
-        <div>
+        <div class="foot-nav">
             <!--linked in profile-->
-            <button class="navitem"> <a href="https://www.linkedin.com/feed/">Linkedin</a></button>  | 
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <button class="navitem" a href="https://www.linkedin.com/feed/"> Linkedin </button>
+            </a>
+            
+            <a href="./Professional-Resume-2022.docx" download="./Professional-Resume-2022.docx">
             <!--Resume-->
-            <button class="navitem"><a href="./Professional Resume 2022">Resume</a></button>
+            <button class="navitem" a href="./Professional-Resume-2022.docx">Resume</button>
+            </a>
         </div>
         
     </footer>

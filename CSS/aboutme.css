@@ -1,0 +1,180 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: NEXTART_Regular;
+    src: url(/CSS/font/NEXTART_Regular.otf);
+}
+@font-face {
+    font-family: NEXTART_Bold;
+    src: url(/CSS/font/NEXTART_Bold.otf);
+}
+
+
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    background: white;
+    min-height: 100%;
+    /*    animation: fadeIn 1s ease-in 0s 1 normal forwards;*/
+
+}
+body{
+    background-color:black;
+}
+
+.header {
+    padding-top: 3;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-size: cover;
+    background-position: top;
+    background: linear-gradient(-45deg, #35577D, #141E30);
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+    padding: 20px
+}
+
+.navitem {
+    text-align: center;
+    padding: 20px 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-bottom: 10;
+    border-style: none;
+    font-family: NEXTART_Regular;
+
+    opacity: 0.8;
+    transition: 0.6s;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.navitem:hover {
+    background-color: white;
+    opacity: 1;
+    color: cornflowerblue;
+}
+
+
+
+.button {
+    font-family: NEXTART_Regular;
+    padding: 20px 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-bottom: 10;
+    border-style: none;
+    
+    color: white;
+    background-color: cornflowerblue;
+    opacity: 0.8;
+    transition: 0.6s;
+}
+
+.button:hover {
+    color: cornflowerblue;
+    background-color: white;
+
+}
+
+.content {
+    /*    display: -moz-box;*/
+    /* Firefox */
+    /*    display: -webkit-box;*/
+    /* Chrome */
+    background-color: white;
+   
+    padding:20px;
+    margin:0px; 
+}
+
+.image {
+    /*    border: 2px solid;*/
+    padding: 20px;
+}
+
+.content .content-item {
+    position: relative;
+    padding:20px 20px;
+    font-size: 17px;
+    font-family: NEXTART_Regular;
+    padding 0px;
+    margin:0px;
+    bottom:20px;
+  
+}
+
+.sub-section-1{
+    background: linear-gradient(-45deg, #35577D, #141E30);
+    margin:0px;
+    padding:20px;
+}
+
+.sub-section-items-1 h1{
+    text-align:center;
+    color:white;
+    font-family:NEXTART_Bold;
+    font-size:50px;
+    
+}
+.sub-section-nav-1{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+    
+    
+}
+
+.sub-nav-item{
+    margin-right:20px;
+    border-style: none;
+    border-radius: 20px;
+    background-color:transparent;
+    color:white;
+    font-size:35px;
+    transition:0.6s;
+    Opacity:0.6;
+    
+
+}
+.sub-nav-item:hover{
+    color:cornflowerblue;
+    opacity:1;
+}
+
+
+.footer {
+
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    color: white;
+    /*    background: linear-gradient(-45deg, #35577D, #141E30);*/
+
+}
+.footer-item{
+    float:right;
+}

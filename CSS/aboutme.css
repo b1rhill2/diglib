@@ -13,27 +13,48 @@
     src: url(/CSS/font/NEXTART_Regular.otf);
 }
 
-
-
-body, html {
-  
-  margin: 0;
-  padding: 0;
-overflow-x: hidden;
-    background:white; 
+@font-face {
+    font-family: NEXTART_Bold;
+    src: url(/CSS/font/NEXTART_Bold.otf);
 }
 
-header{
+
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    background: white;
+    min-height: 100%;
+    /*    animation: fadeIn 1s ease-in 0s 1 normal forwards;*/
+
+}
+
+body {
+    background-color: black;
+}
+
+.header {
     padding-top: 3;
-    margin-top:auto;
-    margin-right:auto;
+    margin-top: auto;
+    margin-right: auto;
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    background-size:cover;
+    background-size: cover;
     background-position: top;
-     background: linear-gradient(-45deg, #35577D, #141E30); 
-    
+    background: linear-gradient(-45deg, #35577D, #141E30);
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: black;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
 }
 
 .nav {
@@ -42,8 +63,7 @@ header{
     margin: 10px;
     position: relative;
     z-index: 1;
-
-
+    padding: 20px
 }
 
 .navitem {
@@ -55,7 +75,6 @@ header{
     margin-bottom: 10;
     border-style: none;
     font-family: NEXTART_Regular;
-    animation: fadeIn 1s ease-in 0s 1 normal forwards;
     opacity: 0.8;
     transition: 0.6s;
     background-color: cornflowerblue;
@@ -68,19 +87,22 @@ header{
     color: cornflowerblue;
 }
 
+.button {
+    font-family: NEXTART_Regular;
+}
 
-
-.button{
- font-family: NEXTART_Regular;
+.button {
+    font-family: NEXTART_Regular;
     padding: 20px 20px;
     padding-left: 20px;
     font-size: 17px;
     border-radius: 10px;
     margin-bottom: 10;
     border-style: none;
-    animation: fadeIn 1s ease-in 0s 1 normal forwards;
     color: white;
-    background-color:cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+    background-color: cornflowerblue;
     opacity: 0.8;
     transition: 0.6s;
 }
@@ -88,81 +110,87 @@ header{
 .button:hover {
     color: cornflowerblue;
     background-color: white;
-    
 }
 
-.content{
-    display: -moz-box; /* Firefox */
-    display: -webkit-box; /* Chrome */
-    display: flexbox;
-    flex-direction: column;
-    flex-align:start;
-    width: 85%;
-    height: 390px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: auto;
-    animation: fadeIn 1s ease-in 0s 1 normal forwards;
-}
-
-.image{
-    float:left;
-    height:360px;   
+.content {
     background-color: white;
-    border: 1px solid;
-    padding:10px 10px;
-    animation: fadeIn 1s ease-in 0s 1 normal forwards;
-    vertical-align: middle
-
-        
+    min-width: 100%;
+    padding: 40px;
+    position: relative;
 }
 
-article{
-    z-index: 0;
-    padding: 1px 20px;
-    text-align: left;
-    font-family: NEXTART_SemiBold;
-    font-size: 14;
-    color: black;
-    line-height: 1.6;
-    width:60%;
-    float:right;
-    clear:right;
-    margin:0.5em 0 1em 1em;
-    border: 2px solid black;
-    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+.content .content-item {
+    font-family: NEXTART_Regular;
+    position: relative;
+    padding: 20px 20px;
+    font-size: 17px;
+    padding 0px;
+    margin: 0px;
+    bottom: 20px;
 }
 
-.para-header{
+.sub-section-1 {
+    background: linear-gradient(-45deg, #35577D, #141E30);
+    margin: 0px;
+    padding: 20px;
+}
+
+.sub-section-items-1 h1 {
     text-align: center;
-    font-size:17;
-    
-    
+    color: white;
+    font-family: NEXTART_Bold;
+    font-size: 50px;
+
+}
+
+.sub-section-nav-1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image {
+    padding:20px;
+    float: left;
+}
+
+.sub-nav-item {
+    margin-right: 20px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    transition: 0.6s;
+    Opacity: 0.6;
+
+
+}
+
+.sub-nav-item:hover {
+    color: cornflowerblue;
+    opacity: 1;
 }
 
 
-footer{
-    position: fixed;
-    padding:  5px;
-    bottom: 0;
-    width: 100%;
-            /* Height of the footer*/ 
-    height: 100px;
-    vertical-align: baseline;
-    scroll-behavior: auto;
-    margin-bottom: -11px;
-    background: linear-gradient(-45deg, #35577D, #141E30);       
-    
+.footer {
+
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    color: white;
+    /*    background: linear-gradient(-45deg, #35577D, #141E30);*/
+
 }
 
+.footer-item {
+    float: right;
+}
 
-.foot-nav{
+.foot-nav {
     display: flex;
     justify-content: space-evenly;
     margin: 10;
     position: relative;
-    z-index: 1;  
+    z-index: 1;
 }
-
-
